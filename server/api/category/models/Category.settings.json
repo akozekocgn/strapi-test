@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "parent": {
+      "model": "category",
+      "via": "categories"
+    },
+    "description": {
+      "type": "text"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "parent"
+    },
+    "post": {
+      "model": "post",
+      "via": "category"
+    }
+  }
+}
