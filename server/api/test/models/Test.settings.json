@@ -1,14 +1,19 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "test",
   "info": {
     "name": "test",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ]
   },
   "attributes": {
-    
+    "heh": {
+      "type": "string"
+    }
   }
 }
