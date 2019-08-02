@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/snippets/me",
+      "handler": "Snippet.me",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

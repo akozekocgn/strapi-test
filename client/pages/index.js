@@ -2,6 +2,7 @@
 
 import RestaurantList from "../components/RestaurantList";
 import React from "react";
+import defaultPage from "../hocs/defaultPage";
 
 import {
   Alert,
@@ -53,4 +54,4 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default defaultPage(Index);

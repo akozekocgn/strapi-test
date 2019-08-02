@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "posts",
+  "collectionName": "comments",
   "info": {
-    "name": "post",
+    "name": "comment",
     "description": ""
   },
   "options": {
@@ -17,21 +17,24 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "text",
-      "required": true
+    "description": {
+      "type": "text"
+    },
+    "post": {
+      "model": "post",
+      "via": "comments"
     },
     "author": {
       "model": "user",
       "plugin": "users-permissions"
     },
-    "category": {
-      "model": "category",
-      "via": "post"
+    "attachment": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     },
-    "comments": {
-      "collection": "comment",
-      "via": "post"
+    "test": {
+      "type": "date"
     }
   }
 }

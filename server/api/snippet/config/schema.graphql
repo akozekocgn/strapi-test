@@ -1,0 +1,15 @@
+module.exports = {
+  definition: `
+    type SessionData {
+      username: Int
+      name: String
+  `,
+  resolver: {
+    Query: {
+      mes: {
+        description: 'Return a single post',
+        resolver: 'Snippet.me'
+      }
+    }
+  }
+};

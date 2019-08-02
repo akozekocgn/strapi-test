@@ -8,18 +8,22 @@
     "@apollo/react-hooks": "^0.1.0-beta.11",
     "apollo-boost": "^0.4.3",
     "apollo-cache-inmemory": "^1.6.2",
+    "apollo-link-context": "^1.0.18",
     "apollo-link-http": "^1.5.15",
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "gql": "^1.1.2",
     "graphql": "^14.4.2",
     "graphql-tag": "^2.10.1",
+    "js-cookie": "^2.2.0",
+    "jwt-decode": "^2.2.0",
     "next": "^9.0.2",
     "next-apollo": "^3.0.3",
     "react": "^16.8.6",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.1",
-    "recompose": "^0.30.0"
+    "recompose": "^0.30.0",
+    "strapi-sdk-javascript": "^0.3.1"
   }
 }
