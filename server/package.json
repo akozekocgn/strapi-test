@@ -23,7 +23,7 @@
   "dependencies": {
     "graphql": "^14.4.2",
     "knex": "latest",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.19",
     "next": "^9.0.2",
     "pg": "latest",
     "react": "^16.8.6",
